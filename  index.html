@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link my css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        /* Write good css for my html */
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            width: 50%;
+            padding: 1rem;
+            margin: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #000;
+            font-size: 1rem;
+        }
+        button {
+            width: 50%;
+            padding: 1rem;
+            margin: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #000;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    This domain is for sale
+    <!-- Create a contact form -->
+    <form action="contact.php" method="post">
+        <input type="text" name="name" placeholder="Full name">
+        <input type="text" name="mail" placeholder="Your email">
+        <!-- take phone number too -->
+        <input type="text" name="phone" placeholder="Phone number">
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit" name="submit">Send mail</button>
+    </form>
+
+
+
+    <!-- Provide email in javascriptwhich is gauravmangal88@gmail.com for contacting me -->
+    <script>
+        const email = "gauravmangal88 at gmail.com"
+        const phone = ""
+        document.write("Contact me at: " + email.link("mailto:" + email))
+    </script>
+</body>
+</html>
